@@ -84,7 +84,6 @@
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
       firefox
-      go
       vscode-fhs
       vencord
       (discord.override {
@@ -105,6 +104,8 @@
   wget
   curl
   zsh
+  go
+  gcc
   gnome-console
   git
   xdg-desktop-portal-hyprland
