@@ -1,2 +1,3 @@
 # nixfiles
-my nixos config. Currently under a lot of stress and building
+my nixos config. Currently under building.  
+Will later include dotfiles as well.
