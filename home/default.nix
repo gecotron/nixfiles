@@ -27,7 +27,8 @@
     xz
     unzip
     p7zip
-
+    pciutils
+    lshw
     # Minecraft Launcher
     prismlauncher
     blockbench-electron
