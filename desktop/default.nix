@@ -18,6 +18,7 @@
   hardware.nvidia = {
     modesetting.enable = true;
     nvidiaSettings = true;
+    open = true;
   };
 
   # Enable X11 and nvidia drivers
