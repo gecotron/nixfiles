@@ -42,15 +42,6 @@
   # Select internationalisation properties.
   i18n.defaultLocale = "en_CA.UTF-8";
   
-  # Enable the X11 windowing system.
-  services.xserver.enable = true;
-
-  # Configure keymap in X11
-  services.xserver = {
-    layout = "us";
-    xkbVariant = "";
-  };
-
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
@@ -98,6 +89,9 @@
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
+  nixpkgs.config.permittedInsecurePackages = [
+    "electron-12.2.3"
+  ];
   environment.systemPackages = with pkgs; [
   # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   helix.packages."${pkgs.system}".helix
@@ -109,6 +103,9 @@
   gnome-console
   git
   xdg-desktop-portal-hyprland
+  etcher
+  jdk17
+  jdk
   ];
 
   # Shell Configuration

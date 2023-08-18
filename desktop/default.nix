@@ -7,10 +7,25 @@
     ./gnome
     # ./hyprland
   ];
-  
-  # Enable the X11 windowing system.
-  services.xserver.enable = true;
 
+  # Configure nvidia GPU drivers
+  hardware.opengl = {
+    enable = true;
+    driSupport = true;
+    driSupport32Bit = true;
+  };
+
+  hardware.nvidia = {
+    modesetting.enable = true;
+    nvidiaSettings = true;
+  };
+
+  # Enable X11 and nvidia drivers
+  services.xserver = {
+    enable = true;
+    videoDrivers = [ "nvidia" ];
+  };
+  
   # Configure keymap in X11
   services.xserver = {
     layout = "us";
