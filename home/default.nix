@@ -20,7 +20,7 @@
     userEmail = "gecotron@gmail.com";
   };
 
-  # Packages that should be installed to the user profile.
+  # Extra user packages not installed/configured in ./programs
   home.packages = with pkgs; [
     # archives
     zip
@@ -30,6 +30,7 @@
 
     # Minecraft Launcher
     prismlauncher
+    blockbench-electron
   ];
 
   # This value determines the home Manager release that your
