@@ -18,7 +18,6 @@
     bunnyfetch
     nnn
     gitui
-    git-brunch
     fzf
     ripgrep
     bottom
