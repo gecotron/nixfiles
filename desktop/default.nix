@@ -8,6 +8,13 @@
     # ./hyprland
   ];
 
+    # Enable X11 and nvidia drivers
+  services.xserver = {
+    enable = true;
+    videoDrivers = [ "nvidia" ];
+    logFile = "/var/log/Xorg.0.log";
+  };
+
   # Configure nvidia GPU drivers
   hardware.opengl = {
     enable = true;
@@ -18,13 +25,6 @@
   hardware.nvidia = {
     modesetting.enable = true;
     nvidiaSettings = true;
-    open = true;
-  };
-
-  # Enable X11 and nvidia drivers
-  services.xserver = {
-    enable = true;
-    videoDrivers = [ "nvidia" ];
   };
   
   # Configure keymap in X11
