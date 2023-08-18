@@ -9,7 +9,8 @@
 
   # set aliases
     shellAliases = {
-    rebuild = "sudo nix flake update && sudo nixos-rebuild switch";
+    rebuild = "sudo nixos-rebuild switch";
+    update = "sudo cp -r /home/mdw/nixfiles/* /etc/nixos";
     };
   };
   # Programs used on shell
