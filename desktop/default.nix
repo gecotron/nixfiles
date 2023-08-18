@@ -47,6 +47,7 @@
   # Enable display manager
   services.xserver.displayManager = {
     gdm.enable = true;
+    gdm.wayland = false;
   };
   
 }
