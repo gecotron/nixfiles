@@ -28,11 +28,8 @@
     unzip
     p7zip
 
-    # nix related
-    #
-    # it provides the command `nom` works just like `nix`
-    # with more details log output
-    nix-output-monitor
+    # Minecraft Launcher
+    prismlauncher
   ];
 
   # This value determines the home Manager release that your
