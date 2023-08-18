@@ -9,5 +9,6 @@
   environment.systemPackages = with pkgs; [
     gnomeExtensions.gsconnect
     gnomeExtensions.user-themes
+    gnome.gnome-tweaks
   ];
 }
