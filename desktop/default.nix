@@ -25,7 +25,6 @@
   hardware.nvidia = {
     modesetting.enable = true;
     nvidiaSettings = true;
-    package = pkgs.linuxPackages_latest;
     # Set up prime
     prime = {
       offload = {
