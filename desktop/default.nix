@@ -25,7 +25,7 @@
   hardware.nvidia = {
     modesetting.enable = true;
     nvidiaSettings = true;
-    package = config.boot.kernelPackages.nvidiaPackages.stable;
+    package = pkgs.linuxPackages_latest;
     # Set up prime
     prime = {
       offload = {
@@ -46,8 +46,10 @@
 
   # Enable display manager
   services.xserver.displayManager = {
-    gdm.enable = true;
+    gdm.enable = false;
     gdm.wayland = false;
+    sddm.enable = true;
+    defaultSession = "gnome";
   };
   
 }
