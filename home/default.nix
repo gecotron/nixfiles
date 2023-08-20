@@ -3,6 +3,7 @@
 {
   imports = [
     ./shell
+    ./mc.nix
   ];
   home.username = "mdw";
   home.homeDirectory = "/home/mdw";
