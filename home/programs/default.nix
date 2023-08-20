@@ -2,7 +2,6 @@
 
 {
   imports = [
-    #./wm
-    #./browser
+    ./mc.nix
   ];
 }

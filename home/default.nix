@@ -2,7 +2,7 @@
 
 {
   imports = [
-    #./programs
+    ./programs
     ./shell
   ];
   home.username = "mdw";
