@@ -1,6 +1,7 @@
 { config, pkgs, ... }:
 
-  let  
+  let
+  # wrapper to offload program to nv-gpu
   nv-offload = pkgs.writeShellScriptBin "nv-offload" '' 
     export __NV_PRIME_RENDER_OFFLOAD=1
     export __NV_PRIME_RENDER_OFFLOAD_PROVIDER=NVIDIA-G0
@@ -21,11 +22,11 @@
     nvidiaSettings = true;
     # Set up prime
     prime = {
+      # Offload to nv-gpu
       offload = {
         enable = true;
         enableOffloadCmd = true;
       };
-      sync.enable = true;
       
       intelBusId = "PCI:00:02:0";
       nvidiaBusId = "PCI:01:00:0";
