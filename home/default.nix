@@ -2,7 +2,6 @@
 
 {
   imports = [
-    ./programs
     ./shell
   ];
   home.username = "mdw";
@@ -29,8 +28,6 @@
     p7zip
     pciutils
     lshw
-    # Minecraft Launcher
-    prismlauncher
     blockbench-electron
   ];
 
