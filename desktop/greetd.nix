@@ -5,9 +5,9 @@
     enable = true;
     settings = {
       default_session = {
-        command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time"
-        user = "mdw"
-      }
+        command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time";
+        user = "mdw";
+      };
     };
   };
 }
