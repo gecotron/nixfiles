@@ -6,6 +6,7 @@
     # ./berrywm
     ./nvidia.nix
     ./gnome
+    ./greetd.nix
     # ./hyprland
   ];
 
@@ -24,8 +25,7 @@
 
   # Enable display manager
   services.xserver.displayManager = {
-    sddm.enable = true;
-    defaultSession = "gnome";
+    sddm.enable = false;
   };
   
 }
