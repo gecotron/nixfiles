@@ -58,12 +58,6 @@
     #media-session.enable = true;
   };
 
-  # Asus laptop control
-  services.supergfxd.enable = true;
-  services.asusd = {
-    enable = true;
-    enableUserService = true;
-  };
 
   # Enable flatpaks
   services.flatpak.enable = true;
