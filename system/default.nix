@@ -64,6 +64,9 @@
     enable = true;
     enableUserService = true;
   };
+
+  # Enable flatpaks
+  services.flatpak.enable = true;
   
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
@@ -71,7 +74,7 @@
   # Enable Flakes and new CLI Tool
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-  # Define a user account. Don't forget to set a password with ‘passwd’.
+  # Define a user account.
   users.users.mdw = {
     isNormalUser = true;
     description = "Michael Ward";
@@ -92,9 +95,6 @@
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-  nixpkgs.config.permittedInsecurePackages = [
-    "electron-12.2.3"
-  ];
   environment.systemPackages = with pkgs; [
   # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   helix.packages."${pkgs.system}".helix
@@ -107,9 +107,9 @@
   git
   xdg-desktop-portal-hyprland
   xdg-desktop-portal-gtk
-  etcher
   jdk17
   jdk
+  gnome.gnome-software
   ];
 
   # Shell Configuration
