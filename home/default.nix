@@ -30,6 +30,7 @@
     pciutils
     lshw
     blockbench-electron
+    steam
   ];
 
   # This value determines the home Manager release that your
