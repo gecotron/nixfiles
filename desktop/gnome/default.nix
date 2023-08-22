@@ -7,6 +7,7 @@
   # Install extensions
   environment.systemPackages = with pkgs; [
     gnomeExtensions.gsconnect
+    gnomeExtensions.tray-icons-reloaded
     gnomeExtensions.user-themes
     gnome.gnome-tweaks
   ];
