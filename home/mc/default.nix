@@ -10,5 +10,5 @@ let
   };
 in {
   home.packages = with pkgs; [ prismlauncher ];
-  xdg.desktopEntries.prismlauncher = prismLauncherDesktop
+  xdg.desktopEntries.prismlauncher = prismLauncherDesktop;
 }
