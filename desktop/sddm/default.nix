@@ -1,6 +1,13 @@
-{ config, pkgs, ... }:
+{ config, lib, ... }:
 
 {
-  environment.systemPackages = with pkgs; [ (callPackage ./theme.nix {}.sddm-sugar-dark) ];
-  services.xserver.displayManager.sddm.theme = "sddm-sugar-dark";
+  services.xserver.displayManager.sddm.sugarCandyNix = {
+    enable = true;
+    Background = lib.cleanSource ./background.jpg
+    ScreenWidth = 1920;
+    ScreenHeight = 1080;
+    FormPosition = "left";
+    HaveFormBackground = true;
+    PartialBlur = true;
+  }; 
 }

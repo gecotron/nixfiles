@@ -21,11 +21,5 @@
   services.xserver = {
     layout = "us";
     xkbVariant = "";
-  };
-
-  # Enable display manager
-  services.xserver.displayManager = {
-    sddm.enable = true; # Configured in sddm folder
-  };
-  
+  };  
 }
