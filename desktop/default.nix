@@ -6,6 +6,7 @@
     # ./berrywm
     ./nvidia.nix
     ./gnome
+    ./sddm
     # ./hyprland
   ];
 
@@ -24,7 +25,7 @@
 
   # Enable display manager
   services.xserver.displayManager = {
-    sddm.enable = true;
+    sddm.enable = true; # Configured in sddm folder
   };
   
 }
