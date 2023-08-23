@@ -14,6 +14,10 @@
     # Official NixOS package source, using nixos-unstable branch here
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     helix.url = "github:helix-editor/helix/23.05";
+    sddm-sugar-candy-nix = {
+      url = "gitlab:Zhaith-Izaliel/sddm-sugar-candy-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     firefox-theme = { url = "github:andreasgrafen/cascade"; flake = false; };
     # home-manager, used for managing user configuration
     home-manager = {
@@ -32,7 +36,7 @@
   # 
   # The `@` syntax here is used to alias the attribute set of the
   # inputs's parameter, making it convenient to use inside the function.
-  outputs = { self, nixpkgs, home-manager, ... }@inputs: {
+  outputs = { self, nixpkgs, sddm-sugar-candy-nix, home-manager, ... }@inputs: {
     nixosConfigurations = {
       # By default, NixOS will try to refer the nixosConfiguration with
       # its hostname, so the system named `nixos-test` will use this one.
@@ -87,6 +91,7 @@
           # Import system configuration
           ./system
           # Import & set up home manager module
+          sddm-sugar-candy-nix.nixosModules.default
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
