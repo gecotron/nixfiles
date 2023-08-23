@@ -31,6 +31,7 @@
     lshw
     blockbench-electron
     steam
+    desktop-file-utils
   ];
 
   # This value determines the home Manager release that your
