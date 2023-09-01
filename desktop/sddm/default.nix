@@ -11,6 +11,9 @@
       FormPosition = "left";
       HaveFormBackground = true;
       PartialBlur = true;
+      MainColor = "white";
+      AccentColor = "#5f87c7";
+      BackgroundColor = "#444";
     };
   }; 
 }
