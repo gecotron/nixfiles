@@ -73,15 +73,7 @@
     isNormalUser = true;
     description = "Michael Ward";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-      firefox
-      vscode-fhs
-      vencord
-      (discord.override {
-        withVencord = true;
-      })
-    #  thunderbird
-    ];
+    packages = with pkgs; [ ];
   };
 
   # Allow unfree packages

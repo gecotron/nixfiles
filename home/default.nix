@@ -22,7 +22,12 @@
 
   # Extra user packages not installed/configured in ./programs
   home.packages = with pkgs; [
-    # archives
+    firefox
+    vscode-fhs
+    vencord
+    (discord.override {
+      withVencord = true;
+    })
     zip
     xz
     unzip
