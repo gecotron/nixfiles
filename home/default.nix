@@ -31,6 +31,7 @@
     lshw
     blockbench-electron
     steam
+    libreoffice-fresh
     desktop-file-utils
   ];
 
