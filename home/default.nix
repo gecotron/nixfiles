@@ -13,13 +13,6 @@
   #     xxx
   # '';
 
-  # basic configuration of git, please change to your own
-  programs.git = {
-    enable = true;
-    userName = "Michael Ward";
-    userEmail = "gecotron@gmail.com";
-  };
-
   # Extra user packages not installed/configured in ./programs
   home.packages = with pkgs; [
     firefox
