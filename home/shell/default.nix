@@ -27,6 +27,7 @@
     nnn
     aerc
     gitui
+    make
     fzf
     ripgrep
     bottom
