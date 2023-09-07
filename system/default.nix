@@ -89,6 +89,7 @@
   zsh
   go
   gcc
+  rustup
   gnome-console
   git
   xdg-desktop-portal-hyprland
