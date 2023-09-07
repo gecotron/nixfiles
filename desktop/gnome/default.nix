@@ -10,5 +10,6 @@
     gnomeExtensions.tray-icons-reloaded
     gnomeExtensions.user-themes
     gnome.gnome-tweaks
+    cavalier
   ];
 }
