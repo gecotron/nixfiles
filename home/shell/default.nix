@@ -27,7 +27,7 @@
     nnn
     aerc
     gitui
-    make
+    gnumake
     fzf
     ripgrep
     bottom
