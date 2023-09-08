@@ -22,7 +22,7 @@
     lshw
     blockbench-electron
     steam
-    davinci-resolve
+    blender
     libreoffice-fresh
     desktop-file-utils
   ];
