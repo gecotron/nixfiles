@@ -3,7 +3,7 @@
 {
   imports = [
     ./shell
-    ./mc
+    ./apps
   ];
   home.username = "mdw";
   home.homeDirectory = "/home/mdw";
@@ -12,26 +12,6 @@
   # home.file.".xxx".text = ''
   #     xxx
   # '';
-
-  # Extra user packages not installed/configured in ./programs
-  home.packages = with pkgs; [
-    firefox
-    vscode-fhs
-    vencord
-    (discord.override {
-      withVencord = true;
-    })
-    zip
-    xz
-    unzip
-    p7zip
-    pciutils
-    lshw
-    blockbench-electron
-    steam
-    libreoffice-fresh
-    desktop-file-utils
-  ];
 
   # This value determines the home Manager release that your
   # configuration is compatible with. This helps avoid breakage
