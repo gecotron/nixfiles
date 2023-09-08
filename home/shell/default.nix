@@ -26,6 +26,7 @@
     bunnyfetch
     nnn
     aerc
+    bombadillo
     gitui
     gnumake
     fzf
