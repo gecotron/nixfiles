@@ -19,7 +19,7 @@
   plymouth = {
     enable = true;
     themePackages = [
-      adi1090x-plymouth-themes
+      pkgs.adi1090x-plymouth-themes
     ];
     theme = "Black HUD";
   };
