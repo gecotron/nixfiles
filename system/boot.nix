@@ -13,14 +13,7 @@
 			efiSupport = true;
 			configurationLimit = 10;
 			useOSProber = true;
+			};
 		};
-	};
-  plymouth = {
-    enable = true;
-    themePackages = [
-      pkgs.adi1090x-plymouth-themes
-    ];
-    theme = "Black HUD";
-  };
 	};
 }
