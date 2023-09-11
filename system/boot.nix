@@ -15,7 +15,6 @@
 			useOSProber = true;
 		};
 	};
-  };
   plymouth = {
     enable = true;
     themePackages = [
@@ -23,4 +22,5 @@
     ];
     theme = "Black HUD";
   };
+	};
 }
