@@ -3,7 +3,7 @@
 {
   # Import wm configs
   imports = [
-    ./berry
+    #./berry
     ./nvidia.nix
     ./gnome
     ./sddm
