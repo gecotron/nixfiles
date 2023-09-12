@@ -64,8 +64,13 @@
   # Enable flatpaks
   services.flatpak.enable = true;
 
-  # Enable pcscd
+  # Enable pcscd & configure gnupg
   services.pcscd.enable = true;
+  programs.gnupg.agent = {
+    enable = true;
+    pinentryFlavor = "curses";
+    enableSSHSupport = true;
+  };
   
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
