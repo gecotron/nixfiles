@@ -21,7 +21,7 @@
     pciutils
     lshw
     blockbench-electron
-    googleearth-pro
+    # googleearth-pro
     steam
     blender
     libreoffice-fresh
