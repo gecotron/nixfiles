@@ -29,7 +29,6 @@
     bombadillo
     gitui
     gnumake
-    gnupg
     fzf
     ripgrep
     bottom

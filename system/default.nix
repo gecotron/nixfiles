@@ -94,8 +94,10 @@
   zsh
   go
   gcc
+  gnupg
   pinentry
   pinentry-gnome
+  pinentry-curses
   rustup
   gnome-console
   git
