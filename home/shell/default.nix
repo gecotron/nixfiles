@@ -29,7 +29,7 @@
     bombadillo
     gitui
     gnumake
-    gpg
+    gnupg
     fzf
     ripgrep
     bottom
