@@ -63,6 +63,9 @@
 
   # Enable flatpaks
   services.flatpak.enable = true;
+
+  # Enable pcscd
+  services.pcscd.enable = true;
   
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
@@ -91,6 +94,8 @@
   zsh
   go
   gcc
+  pinentry
+  pinentry-gnome
   rustup
   gnome-console
   git
