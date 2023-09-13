@@ -21,6 +21,7 @@
     pciutils
     lshw
     blockbench-electron
+    castor
     # googleearth-pro
     steam
     blender
