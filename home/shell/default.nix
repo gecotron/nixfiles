@@ -27,6 +27,7 @@
     nnn
     aerc
     bombadillo
+    amfora
     gitui
     gnumake
     fzf
