@@ -98,6 +98,7 @@
   curl
   zsh
   go
+  pkg-config
   gcc
   gnupg
   pinentry
