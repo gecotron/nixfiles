@@ -22,6 +22,7 @@
     lshw
     blockbench-electron
     castor
+    agate
     # googleearth-pro
     steam
     blender
