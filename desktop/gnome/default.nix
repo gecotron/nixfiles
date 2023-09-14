@@ -9,6 +9,7 @@
     gnomeExtensions.gsconnect
     gnomeExtensions.tray-icons-reloaded
     gnomeExtensions.user-themes
+    gnomeExtensions.rounded-window-corners
     gnome.gnome-tweaks
     cavalier
   ];
