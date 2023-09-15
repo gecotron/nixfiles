@@ -30,6 +30,7 @@
     amfora
     gitui
     gnumake
+    just
     fzf
     ripgrep
     bottom
