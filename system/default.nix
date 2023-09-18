@@ -15,6 +15,7 @@
 
   # Bootloader.
   boot = {
+  swraid.enable = false;
 	loader = {
 		efi = {
 			canTouchEfiVariables = true;
