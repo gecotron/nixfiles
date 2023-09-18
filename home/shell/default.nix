@@ -2,10 +2,9 @@
 
 {
   # Enable shell
-  programs.zsh = {
+  programs.nushell = {
     enable = true;
-    enableCompletion = true;
-    syntaxHighlighting.enable = true;
+    
 
   # set aliases
     shellAliases = {

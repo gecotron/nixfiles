@@ -105,6 +105,7 @@
   pinentry-gnome
   pinentry-curses
   rustup
+  nushell
   gnome-console
   git
   xdg-desktop-portal-hyprland
@@ -125,7 +126,7 @@
       theme = "gianu";
     };
   };
-  users.defaultUserShell = pkgs.zsh;
+  users.defaultUserShell = pkgs.nushell;
 
  # Set Environment Variables
  environment.variables = {
