@@ -30,6 +30,7 @@
     gitui
     gnumake
     just
+    ouch
     fzf
     ripgrep
     bottom
