@@ -20,6 +20,7 @@
     p7zip
     pciutils
     lshw
+    gimp-with-plugins
     blockbench-electron
     castor
     agate
