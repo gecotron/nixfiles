@@ -97,9 +97,9 @@
   helix.packages."${pkgs.system}".helix
   wget
   curl
-  zsh
   go
   pkg-config
+  ravedude
   gcc
   gnupg
   pinentry
@@ -114,9 +114,11 @@
   jdk17
   jdk
   gnome.gnome-software
+  fish
   ];
 
   # Shell Configuration
+  programs.fish.enable = true;
   programs.zsh = {
     enable = true;
     syntaxHighlighting.enable = true;
@@ -127,7 +129,7 @@
       theme = "gianu";
     };
   };
-  users.defaultUserShell = pkgs.nushell;
+  users.defaultUserShell = pkgs.fish;
 
  # Set Environment Variables
  environment.variables = {

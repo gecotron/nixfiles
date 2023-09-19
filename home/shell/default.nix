@@ -2,7 +2,7 @@
 
 {
   # Enable shell
-  programs.nushell = {
+  programs.fish = {
     enable = true;
     
 
