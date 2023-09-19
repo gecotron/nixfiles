@@ -31,6 +31,7 @@
     gnumake
     just
     ouch
+    maven
     fzf
     ripgrep
     bottom
