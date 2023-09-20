@@ -13,22 +13,6 @@
       ../desktop
     ];
 
-  # Bootloader.
-  boot = {
-  swraid.enable = false;
-	loader = {
-		efi = {
-			canTouchEfiVariables = true;
-		};
-		grub = {
-			enable = true;
-			device = "nodev";
-			efiSupport = true;
-			configurationLimit = 10;
-			useOSProber = true;
-		};
-	};
-  };
   networking.hostName = "voyager"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 

@@ -3,6 +3,8 @@
 {
   # Bootloader.
   boot = {
+	consoleLogLevel = 2;
+	swraid.enable = false;
 	loader = {
 		efi = {
 			canTouchEfiVariables = true;
