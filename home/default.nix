@@ -10,9 +10,10 @@ flakes: { config, pkgs, ... }:
   home.homeDirectory = "/home/mdw";
 
   # Firefox config
-  home.file.".mozilla/firefox/default/chrome/firefox-theme".source = flakes.firefox-theme;
+  # home.file.".mozilla/firefox/ue8cjezt.default/chrome/firefox-theme".source = flakes.firefox-theme;
 
-  programs.firefox.profiles.default = {
+  programs.firefox.profiles."ue8cjezt.default" = {
+
     settings = {
       "toolkit.legacyUSerProfileCustomizarions.stylesheets" = true;
       "browser.uidensity" = 0;
