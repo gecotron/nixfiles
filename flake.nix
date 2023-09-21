@@ -97,7 +97,6 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.mdw = import ./home;
-            home-manager.extraSpecialArgs = specialArgs;
           }
         ];
       };
