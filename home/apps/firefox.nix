@@ -1,4 +1,4 @@
-{ config, pkgs, firefox-theme, ... }:
+{ config, pkgs, ... }:
 # Firefox config
 {
   home.file.".mozilla/firefox/default/chrome/firefox-theme".source = firefox-theme;
