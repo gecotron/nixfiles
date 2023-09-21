@@ -1,10 +1,11 @@
-{ config, pkgs, ... }:
+flakes: { config, pkgs, ... }:
 
 {
   imports = [
     ./desktop
     ./shell
     ./apps
+    ./apps/firefox { flakes.firefox-theme = firefox-theme; }
   ];
   home.username = "mdw";
   home.homeDirectory = "/home/mdw";

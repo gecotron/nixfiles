@@ -1,7 +1,7 @@
-{ config, pkgs, inputs, ... }:
+flakes: { config, pkgs, ... }:
 # Firefox config
 {
-  home.file.".mozilla/firefox/default/chrome/firefox-theme".source = inputs.firefox-theme;
+  home.file.".mozilla/firefox/default/chrome/firefox-theme".source = flakes.firefox-theme;
 
   programs.firefox.profiles.default = {
     settings = {

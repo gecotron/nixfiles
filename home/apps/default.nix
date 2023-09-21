@@ -3,7 +3,6 @@
 {
   imports = [
     ./mc
-    ./firefox.nix
   ];
 
   # Extra packages not at system level
