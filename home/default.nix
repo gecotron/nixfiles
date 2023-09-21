@@ -5,15 +5,21 @@ flakes: { config, pkgs, ... }:
     ./desktop
     ./shell
     ./apps
-    ./apps/firefox { flakes.firefox-theme = firefox-theme; }
   ];
   home.username = "mdw";
   home.homeDirectory = "/home/mdw";
 
-  # encode the file content in nix configuration file directly
-  # home.file.".xxx".text = ''
-  #     xxx
-  # '';
+  # Firefox config
+  home.file.".mozilla/firefox/default/chrome/firefox-theme".source = flakes.firefox-theme;
+
+  programs.firefox.profiles.default = {
+    settings = {
+      "toolkit.legacyUSerProfileCustomizarions.stylesheets" = true;
+      "browser.uidensity" = 0;
+      "svg.context-properties.content.enabled" = true;
+      "browser.theme.dark-private-windows" = false;
+    };
+  };
 
   # This value determines the home Manager release that your
   # configuration is compatible with. This helps avoid breakage
